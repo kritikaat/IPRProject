@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form for IPR Scientific Visit</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="iprpage5.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Application Form for IPR Scientific Visit</h1>
+
+        <div class="progress-container">
+            <div class="circle active">1</div>
+            <div class="bar active"></div>
+            <div class="circle active">2</div>
+            <div class="bar active"></div>
+            <div class="circle active">3</div>
+            <div class="bar active"></div> 
+            <div class="circle active">4</div>
+        </div>
+
+        <div class="form-section">
+            <h2>Visit Options</h2>
+
+            <form action="https://api.web3forms.com/submit" method="post" class="space-y-6">
+               
+                    <p class="text-gray-700 mb-4">IPR has three campuses. Depending on the time you have, please choose
+                        the campuses that your group would like to visit. Visits are scheduled only on the 2nd and 4th
+                        Wednesdays of the month.</p>
+                        <input type="hidden" name="access_key" value="7570f6a0-b982-41d0-a8db-dcfb63ac9df3">
+
+                    <table class="w-full border-collapse mb-4">
+                        <thead>
+                            <tr>
+                                <th class="border border-gray-300 bg-blue-600 text-white p-3">Select Campus</th>
+                                <th class="border border-gray-300 bg-blue-600 text-white p-3">Campus</th>
+                                <th class="border border-gray-300 bg-blue-600 text-white p-3">Location</th>
+                                <th class="border border-gray-300 bg-blue-600 text-white p-3">Things to observe</th>
+                                <th class="border border-gray-300 bg-blue-600 text-white p-3">Time required</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="border border-gray-300 p-3"><input type="checkbox" id="select_ipr_main"
+                                        name="campus[]" value="ipr_main" class="form-checkbox h-4 w-4 text-blue-600">
+                                </td>
+                                <td class="border border-gray-300 p-3">IPR Main Campus</td>
+                                <td class="border border-gray-300 p-3">Near Indira Bridge, Bhat, India</td>
+                                <td class="border border-gray-300 p-3">Interactive tour, labs, fusion technology, plasma
+                                    applications</td>
+                                <td class="border border-gray-300 p-3">1.5 Hours</td>
+                            </tr>
+                            <tr>
+                                <td class="border border-gray-300 p-3"><input type="checkbox" id="select_labs"
+                                        name="campus[]" value="labs" class="form-checkbox h-4 w-4 text-blue-600"></td>
+                                <td class="border border-gray-300 p-3">Various Labs</td>
+                                <td class="border border-gray-300 p-3">Fission Technology Complex</td>
+                                <td class="border border-gray-300 p-3">Astra, SST-1, Accelerator, Technology Park,
+                                    Laboratories</td>
+                                <td class="border border-gray-300 p-3">2-3 Hours</td>
+                            </tr>
+                            <tr>
+                                <td class="border border-gray-300 p-3"><input type="checkbox" id="select_fcipt"
+                                        name="campus[]" value="fcipt" class="form-checkbox h-4 w-4 text-blue-600"></td>
+                                <td class="border border-gray-300 p-3">FCIPT</td>
+                                <td class="border border-gray-300 p-3">GIDC Gandhinagar</td>
+                                <td class="border border-gray-300 p-3">Industrial, medical, and energy applications of
+                                    plasma</td>
+                                <td class="border border-gray-300 p-3">2 Hours</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="mb-4">
+                        <label class="block text-gray-800 font-semibold mb-2" for="ipr_main">Campuses your group wishes
+                            to visit<span class="text-red-500">*</span></label>
+
+                        <div class="mb-4">
+                            <label class="block text-gray-800 font-semibold mb-2" for="ipr_main">IPR Main Campus</label>
+                            <div class="flex gap-4">
+                                <div class="flex items-center">
+                                    <input type="radio" id="ipr_main_morning" name="ipr_time[]" value="morning"
+                                        class="form-radio h-4 w-4 text-blue-600">
+                                    <label for="ipr_main_morning" class="ml-2 text-gray-700">Morning</label>
+                                </div>
+                                <div class="flex items-center">
+                                    <input type="radio" id="ipr_main_afternoon" name="ipr_time[]" value="afternoon"
+                                        class="form-radio h-4 w-4 text-blue-600">
+                                    <label for="ipr_main_afternoon" class="ml-2 text-gray-700">Afternoon</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-gray-800 font-semibold mb-2" for="fcipt">FCIPT (GIDC
+                                Gandhinagar)</label>
+                            <div class="flex gap-4">
+                                <div class="flex items-center">
+                                    <input type="radio" id="fcipt_morning" name="fcipt_time[]" value="morning"
+                                        class="form-checkbox h-4 w-4 text-blue-600">
+                                    <label for="fcipt_morning" class="ml-2 text-gray-700">Morning</label>
+                                </div>
+                                <div class="flex items-center">
+                                    <input type="radio" id="fcipt_afternoon" name="fcipt_time[]" value="afternoon"
+                                        class="form-checkbox h-4 w-4 text-blue-600">
+                                    <label for="fcipt_afternoon" class="ml-2 text-gray-700">Afternoon</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-4">
+                        <label class="block text-gray-800 font-semibold mb-2" for="visit_date">Date of IPR visit<span
+                                class="text-red-500">*</span></label>
+                        <input type="date" id="visit_date" name="visit_date" required
+                            class="form-input w-full border-gray-300 rounded-md shadow-sm">
+                    </div>
+
+                    <div class="mb-4">
+                        <label class="block text-gray-800 font-semibold mb-2" for="visit_date">Time for IPR visit<span
+                                class="text-red-500">*</span></label>
+                        <input type="time" id="visit_time" name="visit_time" required
+                            class="form-input w-full border-gray-300 rounded-md shadow-sm">
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="map" class="block text-gray-800 font-semibold mb-2">IPR to FCIPT and Extension
+                            Lab</label>
+                        <img src="mapIPR.png" alt="Map showing the route from IPR to FCIPT"
+                            class="w-full border border-gray-300 rounded-md"
+                            style="width: 30%; height: 20%; border: 1px solid #ddd; border-radius: 5px;">
+                    </div>
+
+                    <div class="mb-4">
+                        <label class="block text-gray-800 font-semibold mb-2" for="materials">Resource materials on
+                            plasma that you require:<span class="text-red-500">*</span></label>
+                        <div class="flex flex-col gap-2">
+                            <div class="flex items-center">
+                                <input type="checkbox" id="posters_en" name="materials[]" value="posters_en"
+                                    class="form-checkbox h-4 w-4 text-blue-600">
+                                <label for="posters_en" class="ml-2 text-gray-700">Posters (set of 10, in
+                                    English)</label>
+                            </div>
+                            <div class="flex items-center">
+                                <input type="checkbox" id="posters_hi" name="materials[]" value="posters_hi"
+                                    class="form-checkbox h-4 w-4 text-blue-600">
+                                <label for="posters_hi" class="ml-2 text-gray-700">Posters (set of 10, in Hindi)</label>
+                            </div>
+                            <div class="flex items-center">
+                                <input type="checkbox" id="book_en" name="materials[]" value="book_en"
+                                    class="form-checkbox h-4 w-4 text-blue-600">
+                                <label for="book_en" class="ml-2 text-gray-700">Book entitled "Living with plasma" (in
+                                    English)</label>
+                            </div>
+                            <div class="flex items-center">
+                                <input type="checkbox" id="book_hi" name="materials[]" value="book_hi"
+                                    class="form-checkbox h-4 w-4 text-blue-600">
+                                <label for="book_hi" class="ml-2 text-gray-700">Book entitled "Living with plasma" (in
+                                    Hindi)</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-4">
+                        <label class="block text-gray-800 font-semibold mb-2" for="email">Contact email ID<span
+                                class="text-red-500">*</span></label>
+                        <input type="email" id="email" name="email" required
+                            class="form-input w-full border-gray-300 rounded-md shadow-sm">
+                    </div>
+
+                    <div class="flex justify-between items-center">
+                        <button type="button" onclick="window.history.back();"
+                            class="back-btn">Back</button>
+                        <button type="submit"
+                            class="bg-blue-600 text-white px-4 py-2 rounded-md shadow-sm hover:bg-blue-700">Submit</button>
+                    </div>
+                
+            </form>
+    
+    </div>
+</body>
+
+</html>

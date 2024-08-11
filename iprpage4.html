@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form for IPR Scientific Visit</title>
+    <link rel="stylesheet" href="iprpage4.css">
+</head>
+<body>
+    <div class="container">
+       
+            <h1>Application Form for IPR Scientific Visit</h1>
+
+            
+            <div class="progress-container">
+                <div class="circle active">1</div>
+                <div class="bar active"></div>
+                <div class="circle active">2</div>
+                <div class="bar active"></div>
+                <div class="circle active">3</div>
+                <div class="bar active"></div> 
+                <div class="circle">4</div>
+            </div>
+
+            <div class="form-section">
+                <h2>Details of Group in-charge</h2>
+
+                <form action="iprpage5.html">
+              
+                    <label for="name">Name of Group in-charge <span class="required">*</span></label>
+                    <input type="text" id="name" name="name" required>
+                    <p class="instruction">Please provide the name of group in-charge</p>
+                            
+                    <label for="position">Position of Group in-charge <span class="required">*</span></label>
+                    <input type="text" id="position" name="position"  required>
+                    <p class="instruction">Please let us know the position held by you in your institution</p>
+               
+              
+                    <label for="email">Email-ID of Group in-charge <span class="required">*</span></label>
+                    <input type="email" id="email" name="email" required>
+                    <p class="instruction">Enter your email</p>
+                
+                    <label for="mobile">Mobile number of Group in-charge <span class="required">*</span></label>
+                    <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" required>
+                    <p class="instruction">Please insert your 10-digit mobile number</p>
+               
+
+            <div class="button-container">
+                <button type="button" onclick="window.history.back();" class="back-btn">Back</button>
+                <button type="submit" class="next-btn">Next</button>
+            </div>
+        </div></form>
+    
+    </div>
+    <script src="validation-form.js"></script>
+
+</body>
+</html>

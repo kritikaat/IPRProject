@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form for IPR Scientific Visit</title>
+    <link rel="stylesheet" href="iprpage3.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Application Form for IPR Scientific Visit</h1>
+
+        <div class="progress-container">
+            <div class="circle active">1</div>
+            <div class="bar active"></div>
+            <div class="circle active">2</div>
+            <div class="bar active"></div>
+            <div class="circle">3</div>
+            <div class="bar"></div>
+            <div class="circle">4</div>
+        </div>
+
+        <div class="form-section">
+            <h2>Details of visiting group</h2>
+            <p>Please email a separate list of ALL the visitors (Students and accompanying staff). Even though there is no restriction on the number of students, 30 would be an ideal number in order to finish the tours within the prescribed time. The format for the list should be: Name, M/F, position, course/year, email, mobile No. to <strong>outreach@ipr.res.in</strong> for making the entry passes.</p>
+            
+            <form action="iprpage4.html">
+                
+                 
+                        <label for="Students">Number of Students in the group <span class="required">*</span></label>
+                        <input type="number" id="Students" name="Students" required>
+                        <p class="instruction">Please provide the number of  students in the group</p>
+                
+                    
+                        <label for="Faculty">Number of Faculty members in the group <span class="required">*</span></label>
+                        <input type="number" id="female-members" name="Faculty" value="10" required>
+                        <p class="instruction">Please provide the number of Faculty in the group</p>
+                
+
+                <div class="buttons">
+                    <button type="button" onclick="window.history.back();" class="back-btn">Back</button>   
+                    <button type="submit" class="next-btn">Next</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="validateGroupForm.js"></script>
+</body>
+</html>

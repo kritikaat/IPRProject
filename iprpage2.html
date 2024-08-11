@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+ <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form for IPR Scientific Visit</title>
+    <link rel="stylesheet" href="iprpage2.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Application Form for IPR Scientific Visit</h1>
+
+        <div class="progress-container">
+            <div class="circle active">1</div>
+            <div class="bar active"></div>
+            <div class="circle">2</div>
+            <div class="bar "></div>
+            <div class="circle">3</div>
+            <div class="bar"></div>
+            <div class="circle">4</div>
+        </div>
+        
+
+        <!-- Form Section -->
+        <div class="form-section">
+            <h2>Details of the Institution</h2>
+            <form action="iprpage3.html">
+                <label for="institution-name">Name of the Institution <span class="required">*</span></label>
+                <input type="text" id="institution-name" name="institution-name" value="LDRP Institute of Technology and Research" required>
+                <p class="instruction">Please provide the name of your School / College / University / Institution</p>
+
+                <label for="Student-branch">Branch of Students <span class="required">*</span></label>
+                <input type="text" id="Student-branch" name="Student-branch" required>
+                <p class="instruction">Please provide the Branch of Students</p>
+
+                <label for="Student-sem">Semester of Students <span class="required">*</span></label>
+                <input type="text" id="Student-sem" name="Student-sem" required>
+                <p class="instruction">Please provide the Semester of students</p>
+               <div class="buttons">
+                <button type="button" onclick="window.history.back();" class="back-btn">Back</button>
+                    <button type="submit" class="next-btn">Next</button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+    <script src="validateForm.js"></script>
+</body>
+</html>
+
