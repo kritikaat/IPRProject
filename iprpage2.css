@@ -102,7 +102,8 @@ label {
 }
 
 input[type="text"],
-input[type="url"] {
+input[type="url"],
+input[type="number"]{
     width: 100%;
     padding: 10px;
     margin-top: 5px;
